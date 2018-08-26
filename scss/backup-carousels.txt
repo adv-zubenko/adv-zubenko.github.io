@@ -1,0 +1,224 @@
+// html services first
+
+
+<div class="services">
+<div class="services-container">
+    <h1 class="title">Вопросы, с которыми я могу помочь</h1>
+    <div class="owl-carousel">
+        <div class="owl-slide">
+            <div class="owl-slide-service-box owl-slide--width">
+                <div class="owl-slide-service-box__icon icon1"></div>
+                <div class="owl-slide-service-box__text">Развод и алименты</div>
+            </div>
+            <div class="owl-slide-service-box owl-slide--width">
+                <div class="owl-slide-service-box__icon icon2"></div>
+                <div class="owl-slide-service-box__text">Хозяйственные споры</div>
+            </div>
+            <div class="owl-slide-service-box">
+                <div class="owl-slide-service-box__icon icon3"></div>
+                <div class="owl-slide-service-box__text">Разрешение споров: наследственных, жилищных, семейных, трудовых, банковских, ДТП и иных</div>
+            </div>
+        </div>
+        <div class="owl-slide">
+            <div class="owl-slide-service-box owl-slide--width">
+                <div class="owl-slide-service-box__icon icon4"></div>
+                <div class="owl-slide-service-box__text">Оформление  наследства</div>
+            </div>
+            <div class="owl-slide-service-box owl-slide--width owl-slide--margin-fix">
+                <div class="owl-slide-service-box__icon icon5"></div>
+                <div class="owl-slide-service-box__text">Приватизация недвижимости</div>
+            </div>
+            <div class="owl-slide-service-box">
+                <div class="owl-slide-service-box__icon icon6"></div>
+                <div class="owl-slide-service-box__text">Представительство в судах и всех организациях интересов граждан и юридических лиц</div>
+            </div>
+        </div>
+        <div class="owl-slide">
+            <div class="owl-slide-service-box owl-slide--width">
+                <div class="owl-slide-service-box__icon icon7"></div>
+                <div class="owl-slide-service-box__text">Уголовные, гражданские, административные дела</div>
+            </div>
+            <div class="owl-slide-service-box owl-slide--width">
+                <div class="owl-slide-service-box__icon icon8"></div>
+                <div class="owl-slide-service-box__text">Судебная независимая експертиза, оценка имущества</div>
+            </div>
+            <div class="owl-slide-service-box">
+                <div class="owl-slide-service-box__icon icon9"></div>
+                <div class="owl-slide-service-box__text">Составление всех видов юридических документов (исковых заявлений, жалоб и иных)</div>
+            </div>
+        </div> 
+        <div class="owl-slide">
+            <div class="owl-slide-service-box owl-slide--width">
+                <div class="owl-slide-service-box__icon icon10"></div>
+                <div class="owl-slide-service-box__text">Узаконение самовольных строений и земельных участков</div>
+            </div>
+            <div class="owl-slide-service-box owl-slide--width">
+                <div class="owl-slide-service-box__icon icon11"></div>
+                <div class="owl-slide-service-box__text">Юридическая консультация по всем правовым вопросам</div>
+            </div>
+            <div class="owl-slide-service-box">
+                <div class="owl-slide-service-box__icon icon12"></div>
+                <div class="owl-slide-service-box__text">Сопровождение и проверка рисков сделок с землей и недвижимостью</div>
+            </div>
+        </div> 
+    </div>
+</div>
+</div>
+
+
+
+
+
+
+//scss slider first
+
+
+.services{
+    width:100%;
+    min-height:700px;
+    position:relative;
+    overflow:hidden;
+    box-shadow:inset 0 0 20px #bdbdbd;
+}
+.services-container{
+    width:90%;
+    margin:0 auto;
+    min-height:90vh;
+    position:relative;
+    @media(max-width:1100px) and (min-height:1000px){
+        min-height:100%;
+    }
+    @media (min-width:450px) and (max-width:599px){
+        min-height:60vh;
+    }
+    @media (min-width:320px) and (max-width:449px){
+        min-height:50vh;
+    }
+}
+.services-container::after{
+    content:"";
+    display:block;
+    width:608px;
+    height:962px;
+    background:url("../img/themis.png");
+    position:absolute;
+    bottom:-400px;right:0;
+    @media (min-width:600px) and (max-width:899px){
+        right:-40px;
+    }
+    @media (min-width:450px) and (max-width:599px){
+        right:-70px;
+    }
+    @media (min-width:320px) and (max-width:449px){
+        right:-140px;
+    }
+
+}
+
+.owl-slide{
+    width:899px;
+    min-height:500px;
+    padding-top:10px;
+    @media (min-width:900px) and (max-width:1199px){
+        width:899px;
+        margin:0 auto;
+    }
+    @media (min-width:600px) and (max-width:899px){
+        width:540px;
+        margin:0 auto;
+    }
+    @media (min-width:450px) and (max-width:599px){
+        width:375px;
+        margin:0 auto;
+    }
+    @media (min-width:320px) and (max-width:449px){
+        width:250px;
+        margin:0 auto;
+    }
+    &--width{
+        width:400px;
+        @media (min-width:900px) and (max-width:1199px){
+            width:375px;
+        }
+        @media (min-width:600px) and (max-width:899px){
+            width:500px;
+        }
+        @media (min-width:450px) and (max-width:599px){
+            width:100%;
+        }
+        @media (min-width:320px) and (max-width:449px){
+            width:100%;
+        }
+    }
+}
+.owl-slide-service-box{
+    display:inline-block;
+    max-width:600px;
+    min-height:160px;
+    box-shadow:2px 5px 10px #d4d4d4;
+    margin:10px 20px 40px 5px;
+    background-color:rgba(255,255,255,.7);
+    font-family:$micross;
+    font-size:20px;
+    color:#402B16;
+    padding:10px;
+    text-align:center;
+    line-height:25px;
+    border:1px solid lightgrey;
+    @media (min-width:600px) and (max-width:899px){
+        max-width:500px;
+    }
+    @media (min-width:450px) and (max-width:599px){
+        margin:10px 0;
+    }
+    @media (min-width:320px) and (max-width:449px){
+        margin:10px 0;
+    }
+    &__icon{
+        width:50px;
+        height:50px;
+        margin:10px auto 20px;
+    }
+    &__text{
+        margin-top:10px;
+    }
+}
+                //icons
+.icon1{
+    background-image:url('../img/icons/icon-break.png');
+}
+.icon2{
+    background-image:url('../img/icons/icon-conflict.png');
+}
+.icon3{
+    background-image:url('../img/icons/icon-hummer.png');
+}
+.icon4{
+    background-image:url('../img/icons/icon-money.png');
+}
+.icon5{
+    background-image:url('../img/icons/icon-build.png');
+}
+.icon6{
+    background-image:url('../img/icons/icon-lawyer.png');
+}
+.icon7{
+    background-image:url('../img/icons/icon-document.png');
+}
+.icon8{
+    background-image:url('../img/icons/icon-judge.png');
+}
+.icon9{
+    background-image:url('../img/icons/icon-document-create.png');
+}
+.icon10{
+    background-image:url('../img/icons/icon-uzakon.png');
+}.icon11{
+    background-image:url('../img/icons/icon-consult.png');
+}
+.icon12{
+    background-image:url('../img/icons/icon-risks.png');
+}
+
+
+
